@@ -1,0 +1,5 @@
+foi realizado classe "Calculadora", foi passado 3 parâmetros para fazer as operações matemáticas e o método de inicialização.
+No método "calcula", é realizado a operação matemática que o usuário optar, com a mensagem de erro, se caso for colocado a opção incorreta.
+A função main cria uma calculadora para fazer as operações. 
+Utilizei um loop while para solicitar continuamente a entrada do usuário. O usuário pode optar por sair digitando 5 
+Assim que o usuário inserir entradas válidas, o programa calcula o resultado da operação selecionada e o exibe ao usuário.
