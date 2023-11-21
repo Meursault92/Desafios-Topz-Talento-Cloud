@@ -43,7 +43,7 @@ def main():
   # Cria uma lista vazia
   lista_produtos = criar_lista()
 
-  # Interação com o usuário
+# Interação com o usuário
   while True:
     # Opções disponíveis
     print("1. Adicionar produto")
@@ -51,28 +51,28 @@ def main():
     print("3. Listar produtos")
     print("4. Sair")
 
-    # Escolha do usuário
+# Interação do usuário
     escolha = input("Escolha uma opção: ")
 
-    # Opção 1: Adicionar produto
+# Opção 1: Adição do produto
     if escolha == "1":
       produto = input("Digite o produto: ")
       adicionar_produto(lista_produtos, produto)
 
-    # Opção 2: Remover produto
+# Opção 2: Remoção do produto
     elif escolha == "2":
       produto = input("Digite o produto a ser removido: ")
       remover_produto(lista_produtos, produto)
 
-    # Opção 3: Listar produtos
+# Opção 3: Listagem dos produtos
     elif escolha == "3":
       listar_produtos(lista_produtos)
 
-    # Opção 4: Sair
+# Opção 4: Sair
     elif escolha == "4":
       break
 
-    # Opção inválida
+# Tratamento de dados para se caso tiver uma interação do usuário errada, "Opção inválida".
     else:
       print("Opção inválida.")
 
