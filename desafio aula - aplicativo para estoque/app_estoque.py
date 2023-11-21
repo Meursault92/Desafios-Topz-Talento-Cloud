@@ -1,4 +1,4 @@
-# aula de array 
+# aula de array dia 20/11/2023
 #Problema
 
 #Um dono de uma loja entra em contato com você com a seguinte situação:
@@ -16,7 +16,6 @@
 
 #Solução
 
-
 #Listas: para armazenar os produtos da loja.
 #For: para adicionar a lista de produtos.
 #Adicionar mais dados na lista: para adicionar novos produtos à lista.
@@ -24,7 +23,7 @@
 #Remover mais produtos na lista: para remover produtos da lista.
 #Mostrar todos os produtos da lista: para mostrar todos os produtos da lista.
 
-# Funções
+# Funções para realizar o CRUD do app
 def criar_lista():
   return []
 
@@ -40,12 +39,12 @@ def listar_produtos(lista):
 
 # Função principal
 def main():
-  # Cria uma lista vazia
+# Criação de uma lista vazia
   lista_produtos = criar_lista()
 
 # Interação com o usuário
   while True:
-    # Opções disponíveis
+# Opções disponíveis para o usuário interagir com o aplicativo
     print("1. Adicionar produto")
     print("2. Remover produto")
     print("3. Listar produtos")
