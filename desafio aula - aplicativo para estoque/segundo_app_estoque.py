@@ -15,15 +15,17 @@
 
 produtos = []
 
-# Função para listar os produtos
+produtos = []
+
+# Lista de produtos
 def listar_produtos():
-  for produto in produtos:
-    print(produto)
+  for i in range(len(produtos)):
+    print(produtos[i])
 
 # Alteração de um produto
 def alterar_produto(produto_atual, produto_novo):
-  for i, produto in enumerate(produtos):
-    if produto == produto_atual:
+  for i in range(len(produtos)):
+    if produtos[i] == produto_atual:
       produtos[i] = produto_novo
 
 # Adiciona um produto à lista
@@ -32,17 +34,17 @@ def adicionar_produto(produto):
 
 # Loop de repetição principal
 while True:
-  # Lista os produtos
+# Lista os produtos
   listar_produtos()
 
-  # Interação com o usuário para realizar a ação desejada
+# Interação com o usuário para realizar a ação desejada
   print("O que você deseja fazer?")
   print("1 - Listar produtos")
   print("2 - Alterar produto")
   print("3 - Adicionar produto")
   opcao = input("Opção: ")
 
-  # Realiza a ação desejada
+# Realiza a ação desejada
   if opcao == "1":
     listar_produtos()
   elif opcao == "2":
